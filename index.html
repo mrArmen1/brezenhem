@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рисование на Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="controls">
+        <label for="pointA">Точка A (x, y):</label>
+        <input type="text" id="pointA" placeholder="x, y">
+        <label for="pointB">Точка B (x, y):</label>
+        <input type="text" id="pointB" placeholder="x, y">
+        <div id="shapeButtons">
+            <button id="lineButton" class="selected">Отрезок</button>
+            <button id="circleButton">Круг</button>
+        </div>
+        <button id="draw">Нарисовать</button>
+        <button id="clear">Очистить</button>
+    </div>
+    <div id="canvas-container">
+        <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
